@@ -1,5 +1,5 @@
-@import url('../global-styles/petcare_colors_style.css');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+@import url("../global-styles/petcare_colors_style.css");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
 
 :root {
   --petcare-transition-width: width 0.3s ease;
@@ -9,7 +9,7 @@
 }
 
 footer {
-  font-family: 'Ubuntu Sans', sans-serif;
+  font-family: "Ubuntu Sans", sans-serif;
   position: static;
   bottom: 0;
   width: 100%;
@@ -17,11 +17,11 @@ footer {
 }
 
 body {
-  font-family: 'Ubuntu Sans', sans-serif;
+  font-family: "Ubuntu Sans", sans-serif;
 }
 
 .petcare-header {
-  padding: 0px;
+  padding: 12px 0;
   width: 100%;
   background-color: var(--petcare-color-full-white);
 }
@@ -33,7 +33,6 @@ body {
   color: var(--petcare-color-dark-orange);
   font-size: 24px;
 }
-
 
 /******************/
 /** Desktop Menu **/
@@ -122,14 +121,14 @@ body {
   footer {
     position: static;
     margin-bottom: 0px;
-  }  
+  }
 
   .sidebar {
     display: none;
   }
 
   .tablet-sidebar {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: normal;
     position: fixed;
     top: 0;
