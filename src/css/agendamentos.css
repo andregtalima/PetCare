@@ -1,11 +1,17 @@
 @import url("../css/global-styles/petcare_colors_style.css");
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Ubuntu Sans", sans-serif;
   background-color: #f5f1f1;
 }
 
-.sidebar {
+/* .sidebar {
   background-color: #ffe0b2;
   height: 100vh;
   padding: 20px;
@@ -18,14 +24,10 @@ body {
   margin-bottom: 10px;
   color: #333;
   text-decoration: none;
-}
+} */
 
 .material-icons {
   margin-right: 10px;
-}
-
-.row {
-  justify-content: center;
 }
 
 #page-title {
