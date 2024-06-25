@@ -18,38 +18,38 @@
         <div class="row">
           <!-- Menu Desktop -->
           <div class="col-2 sidebar">
-            <a href="./src/html/products.html" class="sidebar-item">
-              <i class="material-icons">storefront</i>
-              <span class="sidebar-item-text">Produtos</span>
+            <a href="./products.html" class="sidebar-item">
+            <i class="material-icons">storefront</i>
+            <span class="sidebar-item-text">Produtos</span>
             </a>
-            <a href="./src/html/agendamentos.html" class="sidebar-item">
-              <i class="material-icons">pets</i>
-              <span class="sidebar-item-text">Serviços</span>
-            </a>
-            <a
-              href="./src/html/adocao.html"
-              id="sidebar-item-logged"
-              class="sidebar-item"
-              title="Disponível só para clientes registrados da PetCare."
-            >
-              <i class="material-icons">favorite</i>
-              <span class="sidebar-item-text">Adoção</span>
-            </a>
-            <a href="./src/html/dicas.html" class="sidebar-item">
-              <i class="material-icons">flag</i>
-              <span class="sidebar-item-text">Dicas</span>
-            </a>
-            <a href="./src/html/atendimento.html" class="sidebar-item">
-              <i class="material-icons">help</i>
-              <span class="sidebar-item-text">Fale Conosco</span>
+            <a href="./agendamentos.html" class="sidebar-item">
+            <i class="material-icons">pets</i>
+            <span class="sidebar-item-text">Serviços</span>
             </a>
             <a
-              href="./src/html/login.html"
-              id="logout-desktop"
-              class="sidebar-item"
+            href="./adocao.html"
+            id="sidebar-item-logged"
+            class="sidebar-item"
+            title="Disponível só para clientes registrados da PetCare."
             >
-              <i id="desktop-login-icon" class="material-icons">login</i>
-              <span class="sidebar-item-text" id="last-item-menu">Entrar</span>
+            <i class="material-icons">favorite</i>
+            <span class="sidebar-item-text">Adoção</span>
+            </a>
+            <a href="./dicas.html" class="sidebar-item">
+            <i class="material-icons">flag</i>
+            <span class="sidebar-item-text">Dicas</span>
+            </a>
+            <a href="./atendimento.html" class="sidebar-item">
+            <i class="material-icons">help</i>
+            <span class="sidebar-item-text">Fale Conosco</span>
+            </a>
+            <a
+            href="./login.html"
+            id="logout-desktop"
+            class="sidebar-item"
+            >
+            <i id="desktop-login-icon" class="material-icons">login</i>
+            <span class="sidebar-item-text" id="last-item-menu">Entrar</span>
             </a>
           </div>
             
@@ -61,14 +61,14 @@
                 <a href="./atendimento.html" class="tablet-sidebar-item" data-title="Serviços">
                     <i class="material-icons">pets</i>
                 </a>
-                <a href="#" id="sidebar-tab-item-logged" class="tablet-sidebar-item active"
+                <a href="./adocao.html" id="sidebar-tab-item-logged" class="tablet-sidebar-item active"
                     data-title="Adoção">
                     <i class="material-icons">favorite</i>
                 </a>
                 <a href="./dicas.html" class="tablet-sidebar-item" data-title="Dicas">
                     <i class="material-icons">flag</i>
                 </a>
-                <a href="./suporte.html" class="tablet-sidebar-item" data-title="Fale Conosco">
+                <a href="./atendimento.html" class="tablet-sidebar-item" data-title="Fale Conosco">
                     <i class="material-icons">help</i>
                 </a>
                 <a href="./login.html" id="logout-tablet" class="tablet-sidebar-item" data-title="Login">
@@ -78,45 +78,39 @@
 
             <div class="col content">
                 <!-- Header PetCare -->
-              <div>
                 <div class="petcare-header">
                     <a class="navbar-brand" href="../../index.html" title="Ir para Home PetCare">
                         <img class="nav-logo" src="../assets/logo_cabecalho.png" alt="Logo da PetCare" />
                     </a>
                     <label id="welcome-message-user" class="regarding-user">Bem-vindo!</label>
                 </div>
-            </div>
-
-            <div class="col-10">
-                <h1 id="page-title">Agende o Banho e Tosa do seu Pet</h1>
-                <form id="appointmentForm" class="form-container">
-                    <div class="form-group">
-                        <label for="petName">Nome do Pet:</label>
-                        <input type="text" id="petName" name="petName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="serviceType">Tipo de Serviço:</label>
-                        <select id="serviceType" name="serviceType">
-                            <option value="bath">Banho</option>
-                            <option value="grooming">Tosa</option>
-                            <option value="both">Ambos</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="appointmentDate">Data do Agendamento:</label>
-                        <input type="date" id="appointmentDate" name="appointmentDate" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="additionalInfo">Informações Adicionais:</label>
-                        <textarea id="additionalInfo" name="additionalInfo"></textarea>
-                    </div>
-                    <button type="submit">Agendar</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-               <!-- Footer PetCare -->
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h1 id="page-title">Agende o Banho e Tosa do seu Pet</h1>
+                    <form id="appointmentForm" class="form-container mx-auto my-4">
+                        <div class="form-group">
+                            <label for="petName">Nome do Pet:</label>
+                            <input type="text" id="petName" name="petName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="serviceType">Tipo de Serviço:</label>
+                            <select id="serviceType" name="serviceType">
+                                <option value="bath">Banho</option>
+                                <option value="grooming">Tosa</option>
+                                <option value="both">Ambos</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointmentDate">Data do Agendamento:</label>
+                            <input type="date" id="appointmentDate" name="appointmentDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="additionalInfo">Informações Adicionais:</label>
+                            <textarea id="additionalInfo" name="additionalInfo"></textarea>
+                        </div>
+                        <button type="submit">Agendar</button>
+                    </form>
+                </div>
+                <!-- Footer PetCare -->
                <footer class="footer">
                 <div class="bg-light py-5 py-xl-8 py-xxl-9 border-top border-light">
                     <div class="container overflow-hidden">
@@ -181,13 +175,20 @@
                         </div>
                     </div>
                 </div>
-            </footer>
+                </footer>
+            </div>
+
+            
+        </div>
+    </div>
+
+               
                 <!-- Menu Mobile -->
                 <div class="bottom-menu d-md-none">
                     <a href="./products.html" class="bottom-menu-item" data-title="Produtos">
                         <i class="material-icons">storefront</i>
                     </a>
-                    <a href="./atendimento.html" class="bottom-menu-item" data-title="Serviços">
+                    <a href="./agendamentos.html" class="bottom-menu-item" data-title="Serviços">
                         <i class="material-icons">pets</i>
                     </a>
                     <a href="#" id="sidebar-mob-item-logged" class="bottom-menu-item active"
@@ -221,6 +222,5 @@
         });
     </script>
     <script src="../js/interceptor.js"></script>
-    <script src="../js/login.js"></script>
 </body>
 </html>
