@@ -94,9 +94,9 @@
                         <div class="form-group">
                             <label for="serviceType">Tipo de Serviço:</label>
                             <select id="serviceType" name="serviceType">
-                                <option value="bath">Banho</option>
-                                <option value="grooming">Tosa</option>
-                                <option value="both">Ambos</option>
+                                <option value="banho">Banho</option>
+                                <option value="tosa">Tosa</option>
+                                <option value="ambos">Ambos</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -214,14 +214,15 @@
       crossorigin="anonymous"
     ></script>
 
-    <script>
+    <script src="../js/agendamentos.js"></script>
+    <script src="../js/interceptor.js"></script>
+
+    <!-- <script>
         document.getElementById('appointmentForm').addEventListener('submit', function(event) {
             event.preventDefault(); 
             alert('Agendamento feito com sucesso!');
             this.reset(); 
         });
-    </script>
-    <script src="../js/agendamentos.js"></script>
-    <script src="../js/interceptor.js"></script>
+    </script> -->
 </body>
 </html>
