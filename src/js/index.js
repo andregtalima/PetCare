@@ -1,4 +1,5 @@
 var alerta = document.querySelector("#alerta");
+var sucesso = document.querySelector("#sucesso");
 var btnCadastro = document.querySelector("#btn-cadastrar");
 var pet = document.querySelector("#pet");
 var email = document.querySelector("#email");
@@ -7,12 +8,21 @@ btnCadastro.addEventListener("click", (e) => {
   e.preventDefault();
 
   if (email.value === "" || pet.value === "seu pet") {
-    alerta.innerHTML = "Email ou Pet não informado";
+    alerta.innerHTML = "Email ou Pet não informado!";
+    setTimeout(() => {
+      alerta.innerHTML = "";
+      limpar();
+    }, 1500);
   } else if (!validaEmail(email.value)) {
-    alerta.innerHTML = "Informe um email válido";
+    alerta.innerHTML = "Informe um email válido!";
+    setTimeout(() => {
+      alerta.innerHTML = "";
+      limpar();
+    }, 1500);
   } else {
     emailUsuario = email.value;
     petUsuario = pet.value;
+    sucesso.innerHTML = "Email cadastrado com sucesso!";
 
     let usuarios = new Array();
 
@@ -22,7 +32,10 @@ btnCadastro.addEventListener("click", (e) => {
 
     usuarios.push({ emailUsuario, petUsuario });
 
-    limpar();
+    setTimeout(() => {
+      sucesso.innerHTML = "";
+      limpar();
+    }, 1500);
 
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
   }
@@ -35,7 +48,6 @@ function validaEmail(email) {
 
 function limpar() {
   email.value = "";
-  alerta.innerHTML = "";
   pet.innerHTML = `
      <select 
                   id="pet"
